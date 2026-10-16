@@ -4,28 +4,28 @@
 class Aircloud < Formula
   desc "Build, check and release products on Air-Cloud"
   homepage "https://docs.simpleservices.com.br"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://get.simpleservices.com.br/versions/0.1.4/aircloud_0.1.4_darwin_arm64.tar.gz"
-      sha256 "0fd99e377d99249abd967ccc486f7664845f32c8ae8933f709fea684c551607b"
+      url "https://get.simpleservices.com.br/versions/0.1.5/aircloud_0.1.5_darwin_arm64.tar.gz"
+      sha256 "cd317dc03dcde6aecae69e9d73973512b4550eca1e1fd4be5bf86e71b5e2f154"
     end
     on_intel do
-      url "https://get.simpleservices.com.br/versions/0.1.4/aircloud_0.1.4_darwin_amd64.tar.gz"
-      sha256 "3256083bce813d9b39b7142ba13e1824b90a6d75c0cd1df426eddbdbf30a0845"
+      url "https://get.simpleservices.com.br/versions/0.1.5/aircloud_0.1.5_darwin_amd64.tar.gz"
+      sha256 "474e5cbec9d3702291613032f11c35e19238003f0ebbc450b25569297c748891"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://get.simpleservices.com.br/versions/0.1.4/aircloud_0.1.4_linux_arm64.tar.gz"
-      sha256 "18c2c2ffdf95797a8b027ca0f717062cc17c136e1106236fd9a3f2926a5db4bd"
+      url "https://get.simpleservices.com.br/versions/0.1.5/aircloud_0.1.5_linux_arm64.tar.gz"
+      sha256 "0551e2947955a069d18e75058e85e55b30bd83379bfb3dcf89e8941de97203d3"
     end
     on_intel do
-      url "https://get.simpleservices.com.br/versions/0.1.4/aircloud_0.1.4_linux_amd64.tar.gz"
-      sha256 "a21fa09fdfed1eff4f337a993c0966bfead8d70c7691befa5abe83313c75e332"
+      url "https://get.simpleservices.com.br/versions/0.1.5/aircloud_0.1.5_linux_amd64.tar.gz"
+      sha256 "841b1f3471e1aa4772889fa85a5545a4482f2d5fa443f00152c11e370cefab96"
     end
   end
 
