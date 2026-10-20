@@ -4,28 +4,28 @@
 class Aircloud < Formula
   desc "Build, check and release products on Air-Cloud"
   homepage "https://docs.simpleservices.com.br"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://get.simpleservices.com.br/versions/0.1.6/aircloud_0.1.6_darwin_arm64.tar.gz"
-      sha256 "732dd2d6b650741db64a54e458a5c0ca86a1cc469321ce4fdd9ea7312abe053b"
+      url "https://get.simpleservices.com.br/versions/0.1.7/aircloud_0.1.7_darwin_arm64.tar.gz"
+      sha256 "1d60048c3794a914711b4108e8a346007ee6b966123dacc44aebe5da90ca99a9"
     end
     on_intel do
-      url "https://get.simpleservices.com.br/versions/0.1.6/aircloud_0.1.6_darwin_amd64.tar.gz"
-      sha256 "1773f503e7f08a1bd496d3b40911bf6bf3712e48378a2e66fe2b856d1ef4510b"
+      url "https://get.simpleservices.com.br/versions/0.1.7/aircloud_0.1.7_darwin_amd64.tar.gz"
+      sha256 "125814eb779f8d567d59b48981be7b506cc6563cef6c46f1becfc3015544b2df"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://get.simpleservices.com.br/versions/0.1.6/aircloud_0.1.6_linux_arm64.tar.gz"
-      sha256 "94e6ed042c83d829da3f39bb75f5a268eaa45a80a978744c1f03c93c9f252f42"
+      url "https://get.simpleservices.com.br/versions/0.1.7/aircloud_0.1.7_linux_arm64.tar.gz"
+      sha256 "d276e9ae3f75470feb03dbbfb18e17eeaf0cfce7000b8da87a62b8a99b3d79c9"
     end
     on_intel do
-      url "https://get.simpleservices.com.br/versions/0.1.6/aircloud_0.1.6_linux_amd64.tar.gz"
-      sha256 "a8e5005d941f23dd4489128ee1d7007a41f6086944614a6ebc09742a9646c61b"
+      url "https://get.simpleservices.com.br/versions/0.1.7/aircloud_0.1.7_linux_amd64.tar.gz"
+      sha256 "1157e3219556b7917278e6298d2648c75ce9be6a8d4a37e38f9228df95dc0440"
     end
   end
 
@@ -35,7 +35,7 @@ class Aircloud < Formula
 
   def caveats
     <<~EOS
-      What changed in #{version}: https://docs.simpleservices.com.br/reference/changelog.html#v0.1.6
+      What changed in #{version}: https://docs.simpleservices.com.br/reference/changelog.html#v0.1.7
       `aircloud changelog` compares this install with the latest release.
     EOS
   end
