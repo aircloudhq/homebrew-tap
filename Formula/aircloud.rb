@@ -4,33 +4,40 @@
 class Aircloud < Formula
   desc "Build, check and release products on Air-Cloud"
   homepage "https://docs.simpleservices.com.br"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://get.simpleservices.com.br/versions/0.1.5/aircloud_0.1.5_darwin_arm64.tar.gz"
-      sha256 "cd317dc03dcde6aecae69e9d73973512b4550eca1e1fd4be5bf86e71b5e2f154"
+      url "https://get.simpleservices.com.br/versions/0.1.6/aircloud_0.1.6_darwin_arm64.tar.gz"
+      sha256 "732dd2d6b650741db64a54e458a5c0ca86a1cc469321ce4fdd9ea7312abe053b"
     end
     on_intel do
-      url "https://get.simpleservices.com.br/versions/0.1.5/aircloud_0.1.5_darwin_amd64.tar.gz"
-      sha256 "474e5cbec9d3702291613032f11c35e19238003f0ebbc450b25569297c748891"
+      url "https://get.simpleservices.com.br/versions/0.1.6/aircloud_0.1.6_darwin_amd64.tar.gz"
+      sha256 "1773f503e7f08a1bd496d3b40911bf6bf3712e48378a2e66fe2b856d1ef4510b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://get.simpleservices.com.br/versions/0.1.5/aircloud_0.1.5_linux_arm64.tar.gz"
-      sha256 "0551e2947955a069d18e75058e85e55b30bd83379bfb3dcf89e8941de97203d3"
+      url "https://get.simpleservices.com.br/versions/0.1.6/aircloud_0.1.6_linux_arm64.tar.gz"
+      sha256 "94e6ed042c83d829da3f39bb75f5a268eaa45a80a978744c1f03c93c9f252f42"
     end
     on_intel do
-      url "https://get.simpleservices.com.br/versions/0.1.5/aircloud_0.1.5_linux_amd64.tar.gz"
-      sha256 "841b1f3471e1aa4772889fa85a5545a4482f2d5fa443f00152c11e370cefab96"
+      url "https://get.simpleservices.com.br/versions/0.1.6/aircloud_0.1.6_linux_amd64.tar.gz"
+      sha256 "a8e5005d941f23dd4489128ee1d7007a41f6086944614a6ebc09742a9646c61b"
     end
   end
 
   def install
     bin.install "aircloud"
+  end
+
+  def caveats
+    <<~EOS
+      What changed in #{version}: https://docs.simpleservices.com.br/reference/changelog.html#v0.1.6
+      `aircloud changelog` compares this install with the latest release.
+    EOS
   end
 
   test do
