@@ -4,28 +4,28 @@
 class Aircloud < Formula
   desc "Build, check and release products on Air-Cloud"
   homepage "https://docs.simpleservices.com.br"
-  version "0.1.8"
+  version "0.1.9"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://get.simpleservices.com.br/versions/0.1.8/aircloud_0.1.8_darwin_arm64.tar.gz"
-      sha256 "bed8552f804895af36ce0bd8ba457a6f05fb233b54fa6dc823e5ff4c75c776b4"
+      url "https://get.simpleservices.com.br/versions/0.1.9/aircloud_0.1.9_darwin_arm64.tar.gz"
+      sha256 "c6c4b8c88a51e1fa4083b1481e7873b04546a4e8af9eceb614bfb5717a156614"
     end
     on_intel do
-      url "https://get.simpleservices.com.br/versions/0.1.8/aircloud_0.1.8_darwin_amd64.tar.gz"
-      sha256 "ec35bf0a818175bec6ef8739acf993d1e2519d90670933063115e7e967dfe05f"
+      url "https://get.simpleservices.com.br/versions/0.1.9/aircloud_0.1.9_darwin_amd64.tar.gz"
+      sha256 "0b735a8e5c2f6e91f72fb33a104905b8834d275d2892561aa29125f22bd95b63"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://get.simpleservices.com.br/versions/0.1.8/aircloud_0.1.8_linux_arm64.tar.gz"
-      sha256 "a7755ffbaa3a706ab7c2e53bf6ba43dd646e01331571ea45b3dfbbcbf80c58ad"
+      url "https://get.simpleservices.com.br/versions/0.1.9/aircloud_0.1.9_linux_arm64.tar.gz"
+      sha256 "53c5d0d5a5ec5d9252340df5bcdc275f9e139551ea3ac45c91e773a98b963782"
     end
     on_intel do
-      url "https://get.simpleservices.com.br/versions/0.1.8/aircloud_0.1.8_linux_amd64.tar.gz"
-      sha256 "06cd533e54e744b02791d24a150f05ea41f1b7403df91ff49fac7c3fb5486551"
+      url "https://get.simpleservices.com.br/versions/0.1.9/aircloud_0.1.9_linux_amd64.tar.gz"
+      sha256 "348fb8709f65365416cfe487d5c577bba8c9945f8a8816b1dd47612802935e60"
     end
   end
 
@@ -35,7 +35,7 @@ class Aircloud < Formula
 
   def caveats
     <<~EOS
-      What changed in #{version}: https://docs.simpleservices.com.br/reference/changelog.html#v0.1.8
+      What changed in #{version}: https://docs.simpleservices.com.br/reference/changelog.html#v0.1.9
       `aircloud changelog` compares this install with the latest release.
     EOS
   end
